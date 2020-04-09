@@ -14,7 +14,7 @@ import (
 
 func main() {
 	// データベースを準備
-	db, err := gorm.Open("sqlite3", "/tmp/gorm.db")
+	db, err := gorm.Open("sqlite3", "sample.db")
 	defer db.Close()
 	if err != nil {
 		fmt.Println("err", err)
