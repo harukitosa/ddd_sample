@@ -10,7 +10,7 @@ type UserRepositoryImpliment struct {
 	DB *gorm.DB
 }
 
-func NewUserRepositoryImpliment(DB *gorm.DB) repository.UserRepository {
+func NewUserRepositoryImpliment(DB *gorm.DB) repository.IUserRepository {
 	return &UserRepositoryImpliment{
 		DB: DB,
 	}
